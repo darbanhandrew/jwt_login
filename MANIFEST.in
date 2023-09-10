@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include jwt_login *.css
+recursive-include jwt_login *.csv
+recursive-include jwt_login *.html
+recursive-include jwt_login *.ico
+recursive-include jwt_login *.js
+recursive-include jwt_login *.json
+recursive-include jwt_login *.md
+recursive-include jwt_login *.png
+recursive-include jwt_login *.py
+recursive-include jwt_login *.svg
+recursive-include jwt_login *.txt
+recursive-exclude jwt_login *.pyc
