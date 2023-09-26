@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-09-10 14:37:35.125995",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reviewed_on",
+  "appointment",
+  "reviewed_by",
+  "review_rate",
+  "amended_from",
+  "comment",
+  "reviewed_on_user",
+  "reviewed_by_user"
+ ],
+ "fields": [
+  {
+   "fieldname": "reviewed_on",
+   "fieldtype": "Link",
+   "label": "Reviewed On",
+   "options": "Customer Profile"
+  },
+  {
+   "fieldname": "appointment",
+   "fieldtype": "Link",
+   "label": "Appointment",
+   "options": "Customer Appointment"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Link",
+   "label": "Reviewd By",
+   "options": "Customer Profile"
+  },
+  {
+   "fieldname": "review_rate",
+   "fieldtype": "Rating",
+   "label": "Review Rate"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Customer Review",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Data",
+   "label": "Comment"
+  },
+  {
+   "fetch_from": "reviewed_on.user",
+   "fieldname": "reviewed_on_user",
+   "fieldtype": "Link",
+   "label": "Reviewed On User",
+   "options": "User"
+  },
+  {
+   "fetch_from": "reviewed_by.user",
+   "fieldname": "reviewed_by_user",
+   "fieldtype": "Link",
+   "label": "Reviewed By User",
+   "options": "User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-09-23 00:50:33.570316",
+ "modified_by": "Administrator",
+ "module": "Customer Profile",
+ "name": "Customer Review",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

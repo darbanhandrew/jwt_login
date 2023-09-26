@@ -215,3 +215,7 @@ app_license = "MIT"
 # auth_hooks = [
 #	"jwt_login.auth.validate"
 # ]
+#app_include_js = "/assets/jwt_login/js/customer_profile_list.js"
+override_whitelisted_methods = {
+	"frappe.core.doctype.user.user.generate_keys": "jwt_login.whitelisted.custom_generate_keys"
+}

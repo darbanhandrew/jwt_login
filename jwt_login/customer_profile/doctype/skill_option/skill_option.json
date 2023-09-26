@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-09-16 14:31:35.872561",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "option_name",
+  "type",
+  "values"
+ ],
+ "fields": [
+  {
+   "fieldname": "option_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "options": "Name"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Select\nCheck"
+  },
+  {
+   "fieldname": "values",
+   "fieldtype": "Text",
+   "label": "Values"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-16 14:38:33.558781",
+ "modified_by": "Administrator",
+ "module": "Customer Profile",
+ "name": "Skill Option",
+ "name_case": "Title Case",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
