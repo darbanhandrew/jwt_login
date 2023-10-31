@@ -22,3 +22,7 @@ def custom_generate_keys(user):
     return {"api_secret": api_secret,
             "api_key": user_details.api_key
             }
+
+@frappe.whitelist(allow_guest=True)
+def get_current_session():
+    frappe.response["message"] = frappe.session
